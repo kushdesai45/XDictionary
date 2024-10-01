@@ -38,12 +38,9 @@ function App() {
         <input type="text" onChange={handleChange} placeholder='Search for a word...'/>
         <button onClick={handleSubmit}>Search</button>
       </form>
-
-      {meaning && 
-      <>
       <p style={{fontWeight:'bold'}}>Definition:</p>
+      {meaning && 
       <p>{meaning}</p>
-      </>
       }
     </div>
   );
