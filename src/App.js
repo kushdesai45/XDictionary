@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
 import { useState } from 'react';
 
 let list = 
@@ -29,7 +27,7 @@ function App() {
     if(word){
       setMeaning(word);
     }else{
-      setMeaning('Word not found in the dictionary')
+      setMeaning('Word not found in the dictionary.')
     }
   }
   
@@ -43,7 +41,7 @@ function App() {
 
       {meaning && 
       <>
-      <p>Definition:</p>
+      <p style={{fontWeight:'bold'}}>Definition:</p>
       <p>{meaning}</p>
       </>
       }
